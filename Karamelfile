@@ -1,0 +1,9 @@
+dependencies: 
+  - recipe: zeppelin::install
+    global:
+      - hops::install
+      - hopsworks::install
+      - hadoop_spark::install
+  - recipe: zeppelin::default
+    global:  
+      - hopsworks::default
